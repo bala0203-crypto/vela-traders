@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)file:///C:/Users/ESAKKI%20BALA%20S/Downloads/Vela%20Traders%20-%20Premium%20Beverage%20&%20Water%20Supply.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vela Traders - Premium Beverage &amp; Water Supply</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #1a5c3f;
+      --primary-light: #2d8659;
+      --primary-dark: #0f3d28;
+      --accent: #ff6b35;
+      --accent-light: #ff8a5b;
+      --text-dark: #2c3e50;
+      --text-light: #7f8c8d;
+      --bg-light: #f8f9fa;
+      --bg-white: #ffffff;
+      --border-color: #e0e0e0;
+      --success: #27ae60;
+      --error: #e74c3c;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+      --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--bg-white);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* ============================================
+       HEADER / NAVIGATION
+       ============================================ */
+    header {
+      background: white;
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    nav a {
+      color: var(--text-dark);
+      text-decoration: none;
+      margin: 0 25px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* ============================================
+       HERO SECTION
+       ============================================ */
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 72px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      line-height: 1.2;
+    }
+
+    .hero-content p {
+      font-size: 24px;
+      margin-bottom: 40px;
+      opacity: 0.95;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 18px 45px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .btn-secondary:hover {
+      background: #f0f0f0;
+      transform: translateY(-3px);
+    }
+
+    /* ============================================
+       TRUST SECTION
+       ============================================ */
+    .trust-section {
+      background: var(--bg-light);
+      padding: 80px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .trust-card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .trust-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .trust-icon {
+      width: 70px;
+      height: 70px;
+      background: var(--primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      margin: 0 auto 20px;
+    }
+
+    .trust-card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: var(--text-dark);
+    }
+
+    .trust-card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* ============================================
+       SERVICES SECTION
+       ============================================ */
+    .services-section {
+      padding: 100px 0;
+      background: white;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    .section-label {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 25px;
+      color: var(--text-dark);
+    }
+
+    .section-description {
+      font-size: 18px;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .service-card {
+      background: var(--bg-light);
+      padding: 50px 35px;
+      border-radius: 12px;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .service-card:hover {
+      background: white;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-10px);
+    }
+
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 45px;
+      margin: 0 auto 25px;
+    }
+
+    .service-card h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--text-dark);
+    }
+
+    .service-card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .service-tag {
+      display: inline-block;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* ============================================
+       PRODUCTS SECTION
+       ============================================ */
+    .products-section {
+      padding: 100px 0;
+      background: var(--bg-light);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-10px);
+    }
+
+    .product-image {
+      height: 220px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+    }
+
+    .product-content {
+      padding: 30px;
+    }
+
+    .product-category {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-dark);
+    }
+
+    .product-card p {
+      font-size: 15px;
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .product-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .qty-control {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+    }
+
+    .qty-control button {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: white;
+      cursor: pointer;
+      font-size: 18px;
+      color: var(--text-dark);
+    }
+
+    .qty-display {
+      width: 50px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .product-add-btn {
+      flex: 1;
+      padding: 12px 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .product-add-btn:hover {
+      background: var(--accent-light);
+    }
+
+    /* ============================================
+       FORM SECTION
+       ============================================ */
+    .form-section {
+      padding: 100px 0;
+      background: white;
+    }
+
+    .form-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .form-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+
+    .form-context h2 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 25px;
+      color: var(--text-dark);
+      line-height: 1.2;
+    }
+
+    .form-context > p {
+      font-size: 18px;
+      color: var(--text-light);
+      margin-bottom: 35px;
+      line-height: 1.8;
+    }
+
+    .assurance-list {
+      list-style: none;
+    }
+
+    .assurance-item {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 25px;
+      padding: 20px;
+      background: var(--bg-light);
+      border-radius: 8px;
+    }
+
+    .assurance-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .assurance-content h4 {
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .assurance-content p {
+      font-size: 15px;
+      color: var(--text-light);
+    }
+
+    .form-card {
+      background: white;
+      border-radius: 12px;
+      padding: 50px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-color);
+    }
+
+    .form-card h3 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: var(--text-dark);
+    }
+
+    .form-subtitle {
+      font-size: 16px;
+      color: var(--text-light);
+      margin-bottom: 30px;
+    }
+
+    .form-message {
+      display: none;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      font-weight: 500;
+      line-height: 1.6;
+      border-left: 4px solid;
+    }
+
+    .form-message.show {
+      display: block;
+    }
+
+    .form-message.success {
+      background-color: rgba(39, 174, 96, 0.1);
+      color: var(--success);
+      border-color: var(--success);
+    }
+
+    .form-message.error {
+      background-color: rgba(231, 76, 60, 0.1);
+      color: var(--error);
+      border-color: var(--error);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-dark);
+      font-size: 15px;
+    }
+
+    .form-group label .required {
+      color: var(--error);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 15px 18px;
+      border: 1.5px solid var(--border-color);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 15px;
+      transition: all 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(26, 92, 63, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .form-group.error input,
+    .form-group.error select,
+    .form-group.error textarea {
+      border-color: var(--error);
+      background-color: rgba(231, 76, 60, 0.05);
+    }
+
+    .error-message {
+      color: var(--error);
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    .form-full {
+      grid-column: 1 / -1;
+    }
+
+    .form-actions {
+      margin-top: 35px;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      padding: 18px 30px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .form-submit-btn:hover:not(:disabled) {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-submit-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .loading-spinner {
+      width: 18px;
+      height: 18px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .submission-id {
+      font-weight: 700;
+      font-size: 16px;
+      font-family: 'Courier New', monospace;
+      background-color: rgba(26, 92, 63, 0.1);
+      padding: 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    /* ============================================
+       CTA SECTION
+       ============================================ */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      line-height: 1.2;
+    }
+
+    .cta-section p {
+      font-size: 20px;
+      margin-bottom: 50px;
+      opacity: 0.95;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.8;
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 16px;
+      opacity: 0.8;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    /* ============================================
+       HOW IT WORKS / WHY CHOOSE / TESTIMONIALS / FAQ
+       ============================================ */
+    .steps-section, .why-section, .testimonials-section, .faq-section { padding: 100px 0; }
+    .steps-section { background: white; }
+    .why-section { background: var(--bg-light); }
+    .testimonials-section { background: white; }
+    .faq-section { background: var(--bg-light); }
+
+    .steps-grid, .why-grid, .testimonials-grid {
+      display: grid;
+      gap: 30px;
+    }
+    .steps-grid, .why-grid { grid-template-columns: repeat(4, 1fr); }
+    .testimonials-grid { grid-template-columns: repeat(3, 1fr); }
+
+    @media (max-width: 1024px) {
+      .steps-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .steps-grid, .why-grid { grid-template-columns: 1fr; }
+    }
+
+    .step-card, .why-card {
+      background: var(--bg-light);
+      padding: 40px 30px;
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+    .why-card { background: white; box-shadow: var(--shadow-sm); }
+    .step-card:hover, .why-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
+
+    .step-number {
+      width: 56px; height: 56px;
+      background: var(--accent);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; font-weight: 800;
+      margin-bottom: 22px;
+    }
+    .step-card h3, .why-card h3 { font-size: 22px; margin-bottom: 12px; }
+    .step-card p, .why-card p { font-size: 16px; color: var(--text-light); line-height: 1.8; }
+
+    .why-icon {
+      width: 60px; height: 60px;
+      background: var(--primary);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 30px; margin-bottom: 20px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-light);
+      padding: 40px;
+      border-radius: 12px;
+      border-top: 4px solid var(--accent);
+    }
+    .testimonial-text { font-size: 18px; line-height: 1.8; color: var(--text-dark); margin-bottom: 28px; font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: 16px; }
+    .testimonial-avatar {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--primary); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 20px;
+    }
+    .testimonial-author h4 { font-size: 17px; }
+    .testimonial-author span { font-size: 14px; color: var(--text-light); }
+
+    .faq-list { max-width: 900px; margin: 0 auto; }
+    .faq-item {
+      background: white;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      background: none; border: none;
+      padding: 24px 28px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 18px; font-weight: 700; color: var(--text-dark);
+      cursor: pointer; text-align: left; font-family: inherit;
+    }
+    .faq-question span { color: var(--primary); font-size: 24px; transition: transform 0.3s; }
+    .faq-answer { display: none; padding: 0 28px 24px; font-size: 16px; color: var(--text-light); line-height: 1.8; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-question span { transform: rotate(45deg); }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 25px;
+      }
+
+      .hero-content h1 {
+        font-size: 48px;
+      }
+
+      .section-title {
+        font-size: 42px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .form-card {
+        padding: 30px;
+      }
+
+      .cta-section h2 {
+        font-size: 42px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================
+     HEADER
+     ============================================ -->
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">🏢 VELA TRADERS</div>
+      <nav>
+        <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-professional.html#services">Services</a>
+        <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-professional.html#products">Products</a>
+        <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-professional.html#form">Order Now</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Premium Beverage &amp; Water Supply</h1>
+      <p>Your trusted partner for quality beverages and drinking water. Serving shops, dealers, and events with organized, reliable supply solutions.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})">Place Order Now</button>
+        <button class="btn btn-secondary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">View Products</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TRUST SECTION
+     ============================================ -->
+<section class="trust-section">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">✓</div>
+        <h3>Verified Quality</h3>
+        <p>All products meet safety and hygiene standards. Sourced from trusted suppliers.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">📦</div>
+        <h3>Quick Dispatch</h3>
+        <p>Fast and reliable delivery. We coordinate logistics to your location seamlessly.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">💼</div>
+        <h3>Business Friendly</h3>
+        <p>Designed for shops, dealers, and events. Flexible order quantities and types.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">🤝</div>
+        <h3>Personal Support</h3>
+        <p>Our team coordinates each order personally. Direct contact with your coordinator.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SERVICES SECTION
+     ============================================ -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">What We Offer</p>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-description">Vela Traders supports your business with flexible, organized supply solutions tailored to your needs.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🏪</div>
+        <h3>Regular Shop Supply</h3>
+        <p>Keep your shelves stocked with quality products. Convenient weekly or bi-weekly supply arrangements.</p>
+        <span class="service-tag">Weekly • Bi-weekly</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📈</div>
+        <h3>Dealer Supply</h3>
+        <p>Support for bulk orders. Organized product requirements and high-volume fulfillment coordination.</p>
+        <span class="service-tag">High-volume</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎉</div>
+        <h3>Event Supply</h3>
+        <p>Planning an event? We arrange the right products and quantities for your guests and requirements.</p>
+        <span class="service-tag">Weddings • Corporate</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⭐</div>
+        <h3>Multiple Brands</h3>
+        <p>Choose brands and individual products based on your needs. Single-order consolidation available.</p>
+        <span class="service-tag">Consolidation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PRODUCTS SECTION
+     ============================================ -->
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Available Products</p>
+      <h2 class="section-title">Our Range</h2>
+      <p class="section-description">Quality beverages and water products for your business needs.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image">💧</div>
+        <div class="product-content">
+          <span class="product-category">WATER</span>
+          <h3>Packaged Drinking Water (20L)</h3>
+          <p>Multi-stage filtered, sanitized jars for offices and residences.</p>
+          <div class="product-actions">
+            <div class="qty-control">
+              <button onclick="decreaseQty(this)">−</button>
+              <div class="qty-display">1</div>
+              <button onclick="increaseQty(this)">+</button>
+            </div>
+            <button class="product-add-btn" onclick="addToCart('Packaged Water 20L', this)">Add Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">🥤</div>
+        <div class="product-content">
+          <span class="product-category">WATER</span>
+          <h3>500ml Bottled Water (24 Pcs)</h3>
+          <p>Compact sealed bottles for events, conferences, and retail shelves.</p>
+          <div class="product-actions">
+            <div class="qty-control">
+              <button onclick="decreaseQty(this)">−</button>
+              <div class="qty-display">1</div>
+              <button onclick="increaseQty(this)">+</button>
+            </div>
+            <button class="product-add-btn" onclick="addToCart('500ml Water Bottles', this)">Add Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">🥛</div>
+        <div class="product-content">
+          <span class="product-category">BEVERAGE</span>
+          <h3>Campa Cola &amp; Flavors</h3>
+          <p>Iconic sparkling soft drinks in multiple flavors for retail and stalls.</p>
+          <div class="product-actions">
+            <div class="qty-control">
+              <button onclick="decreaseQty(this)">−</button>
+              <div class="qty-display">1</div>
+              <button onclick="increaseQty(this)">+</button>
+            </div>
+            <button class="product-add-btn" onclick="addToCart('Campa Cola Case', this)">Add Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">🍊</div>
+        <div class="product-content">
+          <span class="product-category">BEVERAGE</span>
+          <h3>Tilo Refreshing Beverages</h3>
+          <p>High-demand fruit-flavored drinks for fast-turnaround retail coolers.</p>
+          <div class="product-actions">
+            <div class="qty-control">
+              <button onclick="decreaseQty(this)">−</button>
+              <div class="qty-display">1</div>
+              <button onclick="increaseQty(this)">+</button>
+            </div>
+            <button class="product-add-btn" onclick="addToCart('Tilo Beverages', this)">Add Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FORM SECTION
+     ============================================ -->
+<section class="form-section" id="form">
+  <div class="container">
+    <div class="form-wrapper">
+      <!-- Left: Context -->
+      <div class="form-context">
+        <h2>Tell Vela Traders What You Need</h2>
+        <p>Planning your next stock order or arranging beverages for an event? Share your requirements with Vela Traders, and our team will help you coordinate the products and quantities you need.</p>
+        
+        <ul class="assurance-list">
+          <li class="assurance-item">
+            <div class="assurance-icon">✓</div>
+            <div class="assurance-content">
+              <h4>Organized Requirements</h4>
+              <p>We keep track of your selections and quantities in one place.</p>
+            </div>
+          </li>
+          <li class="assurance-item">
+            <div class="assurance-icon">🔒</div>
+            <div class="assurance-content">
+              <h4>Secure Information</h4>
+              <p>Your data is protected and used only to coordinate delivery.</p>
+            </div>
+          </li>
+          <li class="assurance-item">
+            <div class="assurance-icon">📞</div>
+            <div class="assurance-content">
+              <h4>Personal Coordination</h4>
+              <p>Our team reaches out to confirm all details and arrange delivery.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="form-card">
+        <h3>Request a Supply</h3>
+        <p class="form-subtitle">Fill in the fields below and our logistics coordinator will connect with you.</p>
+
+        <div id="formMessage" class="form-message show error"><strong>✕ Could not reach the server. Your details are still in the form, please try again.</strong></div>
+
+        <form id="supplyForm">
+          <!-- Row 1 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Contact Person Name <span class="required">*</span></label>
+              <input type="text" id="fullName" name="contactPerson" placeholder="John Doe" required="">
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="shopName">Customer / Shop Name <span class="required">*</span></label>
+              <input type="text" id="shopName" name="customerName" placeholder="Sharma Stores" required="">
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Mobile Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="mobileNumber" placeholder="9876543210" required="">
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="location">Delivery Location <span class="required">*</span></label>
+              <input type="text" id="location" name="deliveryLocation" placeholder="Mumbai, Sector 18" required="">
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com">
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="address">Full Address</label>
+              <input type="text" id="address" name="address" placeholder="Complete delivery address">
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <!-- Product -->
+          <div class="form-group form-full">
+            <label for="product">Product <span class="required">*</span></label>
+            <select id="product" name="product" required="">
+              <option value="">-- Select a Product --</option>
+              <option value="Packaged Drinking Water (20L Jar)">Packaged Drinking Water (20L Jar)</option>
+              <option value="500ml Bottled Water Case (24 Pcs)">500ml Bottled Water Case (24 Pcs)</option>
+              <option value="Campa Cola &amp; Flavors Case">Campa Cola &amp; Flavors Case</option>
+              <option value="Tilo Refreshing Beverages">Tilo Refreshing Beverages</option>
+            </select>
+            <div class="error-message"></div>
+          </div>
+
+          <!-- Category & Quantity -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="category">Product Category</label>
+              <select id="category" name="category">
+                <option value="">-- Select --</option>
+                <option value="Water">Water</option>
+                <option value="Beverages">Beverages</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity <span class="required">*</span></label>
+              <input type="number" id="quantity" name="quantity" placeholder="50" min="1" required="">
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <!-- Unit & Order Type -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="unit">Unit</label>
+              <select id="unit" name="unit">
+                <option value="">-- Select --</option>
+                <option value="units">Units</option>
+                <option value="cases">Cases</option>
+                <option value="boxes">Boxes</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="orderType">Order Type</label>
+              <select id="orderType" name="orderType">
+                <option value="">-- Select --</option>
+                <option value="One-time">One-time Order</option>
+                <option value="Regular">Regular Supply</option>
+                <option value="Event">Event Supply</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Delivery Date -->
+          <div class="form-group form-full">
+            <label for="deliveryDate">Preferred Delivery Date</label>
+            <input type="date" id="deliveryDate" name="deliveryDate">
+          </div>
+
+          <!-- Notes -->
+          <div class="form-group form-full">
+            <label for="notes">Additional Requirements / Message</label>
+            <textarea id="notes" name="additionalNotes" placeholder="Special instructions, unload requirements, or recurring needs..."></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-actions">
+            <button type="submit" class="form-submit-btn" id="submitBtn">
+              <span id="submitBtnText" style="display: inline;">Place Order &amp; Request</span>
+              <span id="submitBtnSpinner" class="loading-spinner" style="display: none;"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CTA SECTION
+     ============================================ -->
+<!-- HOW IT WORKS -->
+<section class="steps-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Getting Started</p>
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-description">Simple, transparent and organized from start to finish.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card"><div class="step-number">1</div><h3>Choose Your Products</h3><p>Select the brands and products you want from our range.</p></div>
+      <div class="step-card"><div class="step-number">2</div><h3>Tell Us Your Quantity</h3><p>Let us know how many bottles, cases or units you need.</p></div>
+      <div class="step-card"><div class="step-number">3</div><h3>Share Your Details</h3><p>Enter your contact and delivery information so we can reach you.</p></div>
+      <div class="step-card"><div class="step-number">4</div><h3>We Coordinate Supply</h3><p>Our team reviews your requirement and confirms dispatch details.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="why-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Our Advantages</p>
+      <h2 class="section-title">Why Choose Vela Traders</h2>
+      <p class="section-description">We make your ordering process smooth and efficient.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">✨</div><h3>Easy Ordering</h3><p>Share your product and quantity requirements in one convenient place.</p></div>
+      <div class="why-card"><div class="why-icon">🎯</div><h3>Flexible Requirements</h3><p>Request different brands and quantities based on your exact needs.</p></div>
+      <div class="why-card"><div class="why-icon">💼</div><h3>Business-Friendly</h3><p>Designed around the practical schedules of shops, dealers and events.</p></div>
+      <div class="why-card"><div class="why-icon">👥</div><h3>Personal Support</h3><p>Our team personally coordinates your enquiry and fulfilment.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Customer Stories</p>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-description">Shops, dealers and event organizers who trust Vela Traders.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"The ordering process is simple, and the supply is well coordinated. It makes managing our regular shop stock much easier."</p>
+        <div class="testimonial-author"><div class="testimonial-avatar">R</div><div><h4>Rajesh Kumar</h4><span>Retail Shop Owner</span></div></div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"We needed beverages in larger quantities for an event, and Vela Traders helped us organize the requirement properly."</p>
+        <div class="testimonial-author"><div class="testimonial-avatar">P</div><div><h4>Priya Sharma</h4><span>Event Coordinator</span></div></div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Having different products through one supplier saves us a lot of time. We share our requirements and the order is coordinated easily."</p>
+        <div class="testimonial-author"><div class="testimonial-avatar">A</div><div><h4>Anil Patel</h4><span>Authorized Dealer</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Questions?</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open"><button class="faq-question" onclick="toggleFaq(this)">How do I place an order? <span>+</span></button><div class="faq-answer">Fill out the order form on this page with your product, quantity and delivery details. Our team will contact you to confirm the schedule.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What is the minimum order quantity? <span>+</span></button><div class="faq-answer">Quantities can be customized to your needs. Mention your requirement in the form and our team will confirm the options.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How quickly can you deliver? <span>+</span></button><div class="faq-answer">Timelines depend on your location and order size. Our logistics team confirms the delivery date after you submit your requirement.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Can I request regular recurring supply? <span>+</span></button><div class="faq-answer">Yes. Choose "Regular Supply" as the order type and our team will help set up a recurring schedule.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Can I mix different products in one order? <span>+</span></button><div class="faq-answer">Yes. Multiple products and brands can be consolidated into a single delivery.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Can you arrange supplies for events? <span>+</span></button><div class="faq-answer">Yes. Choose "Event Supply" as the order type and share your event details in the notes.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Streamline Your Supply?</h2>
+    <p>Let Vela Traders handle your beverage and water supply needs. Place an order today and experience convenient, coordinated delivery.</p>
+    <div class="hero-buttons">
+      <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+      <a href="https://payments.cashfree.com/forms/getaudit" class="btn btn-secondary" target="_blank">Free Audit for ₹1</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer>
+  <div class="container">
+    <p>© 2026 Vela Traders. All rights reserved. Quality beverages &amp; water supply solutions for your business.</p>
+  </div>
+</footer>
+
+<script>
+  const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxyYwtDIk4kr5ajXcjadeGv_F4LuuxXIzzPocqzRwHkjqgnRSDHrs7ZgIAcM9xd3VrC6w/exec";
+
+  const form = document.getElementById('supplyForm');
+  const messageDiv = document.getElementById('formMessage');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitBtnText = document.getElementById('submitBtnText');
+  const submitBtnSpinner = document.getElementById('submitBtnSpinner');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    messageDiv.classList.remove('show', 'success', 'error');
+    clearErrors();
+
+    if (!validateForm()) return;
+
+    submitBtn.disabled = true;
+    submitBtnText.style.display = 'none';
+    submitBtnSpinner.style.display = 'inline-block';
+
+    try {
+      const formData = {
+        contactPerson: document.getElementById('fullName').value.trim(),
+        customerName: document.getElementById('shopName').value.trim(),
+        mobileNumber: document.getElementById('phone').value.trim(),
+        deliveryLocation: document.getElementById('location').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        address: document.getElementById('address').value.trim(),
+        product: document.getElementById('product').value.trim(),
+        category: document.getElementById('category').value.trim(),
+        quantity: document.getElementById('quantity').value.trim(),
+        unit: document.getElementById('unit').value.trim(),
+        deliveryDate: document.getElementById('deliveryDate').value.trim(),
+        orderType: document.getElementById('orderType').value.trim(),
+        additionalNotes: document.getElementById('notes').value.trim()
+      };
+
+      console.log("Sending:", formData);
+
+      // No custom headers on purpose: this keeps it a "simple" request so the browser skips the CORS preflight that Apps Script cannot answer.
+      const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify(formData)
+      });
+      const result = await response.json();
+
+      if (result.success) {
+        showSuccessMessage(result.submissionId);
+        form.reset();
+      } else {
+        showErrorMessage(result.message || 'Unable to submit the form');
+      }
+      messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    } catch (error) {
+      console.error(error);
+      showErrorMessage('Could not reach the server. Your details are still in the form, please try again.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtnText.style.display = 'inline';
+      submitBtnSpinner.style.display = 'none';
+    }
+  });
+
+  function validateForm() {
+    let isValid = true;
+    const required = ['fullName', 'shopName', 'phone', 'location', 'product', 'quantity'];
+    
+    required.forEach(id => {
+      const field = document.getElementById(id);
+      if (!field.value.trim()) {
+        showFieldError(field, 'Required');
+        isValid = false;
+      }
+    });
+
+    const phone = document.getElementById('phone').value.trim();
+    if (phone && !/^[0-9]{10,}$/.test(phone.replace(/[\D]/g, ''))) {
+      showFieldError(document.getElementById('phone'), 'Invalid phone number');
+      isValid = false;
+    }
+
+    const email = document.getElementById('email').value.trim();
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      showFieldError(document.getElementById('email'), 'Invalid email');
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  function showFieldError(field, msg) {
+    const group = field.closest('.form-group');
+    group.classList.add('error');
+    const errDiv = group.querySelector('.error-message');
+    if (errDiv) errDiv.textContent = msg;
+  }
+
+  function clearErrors() {
+    document.querySelectorAll('.form-group.error').forEach(g => {
+      g.classList.remove('error');
+      const e = g.querySelector('.error-message');
+      if (e) e.textContent = '';
+    });
+  }
+
+  function showSuccessMessage(id) {
+    messageDiv.innerHTML = `<strong>✓ Order submitted successfully!</strong><br>Submission ID: <span class="submission-id">${id}</span>`;
+    messageDiv.classList.add('show', 'success');
+  }
+
+  function showErrorMessage(msg) {
+    messageDiv.innerHTML = `<strong>✕ ${msg}</strong>`;
+    messageDiv.classList.add('show', 'error');
+  }
+
+  function toggleFaq(btn) {
+    btn.parentElement.classList.toggle('open');
+  }
+
+  function increaseQty(btn) {
+    const display = btn.parentElement.querySelector('.qty-display');
+    display.textContent = parseInt(display.textContent) + 1;
+  }
+
+  function decreaseQty(btn) {
+    const display = btn.parentElement.querySelector('.qty-display');
+    const curr = parseInt(display.textContent);
+    if (curr > 1) display.textContent = curr - 1;
+  }
+
+  function addToCart(product, btn) {
+    const qty = btn.parentElement.querySelector('.qty-display').textContent;
+    document.getElementById('product').value = product;
+    document.getElementById('quantity').value = qty;
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+
+
+</body></html>
