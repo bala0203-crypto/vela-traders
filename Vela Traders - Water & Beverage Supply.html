@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#services -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vela Traders - Water &amp; Beverage Supply</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Vela Traders - Water &amp; Beverage Supply_files/css2" rel="stylesheet">
+<style>
+  :root{
+    --blue:#0879c9;
+    --blue-dark:#0060a2;
+    --navy:#001d36;
+    --text-body:#404751;
+    --text-muted:#707883;
+    --bg-badge:#edf4ff;
+    --bg-badge-2:#c4e7ff;
+    --border:#e3e7ee;
+    --card:#ffffff;
+    --bg-page:#f7f9ff;
+    --success:#1a8a4a;
+    --error:#d64545;
+    --radius-lg:16px;
+    --radius-md:12px;
+    --radius-sm:8px;
+    --shadow-card:0 1px 2px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-lift:0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -4px rgba(0,0,0,0.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  section, .hero-section{scroll-margin-top:90px;}
+  body{
+    font-family:'Inter',sans-serif;
+    color:var(--text-body);
+    background:var(--bg-page);
+    line-height:1.6;
+  }
+  h1,h2,h3,h4,h5{font-family:'Plus Jakarta Sans',sans-serif;color:var(--navy);}
+  .wrap{max-width:1184px;margin:0 auto;padding:0 24px;}
+  img{max-width:100%;display:block;}
+
+  /* ===== HEADER ===== */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,0.97);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--border);
+    position:sticky;
+  }
+  header .header-inner{position:relative;}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1184px;margin:0 auto;}
+  .logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;color:var(--navy);display:flex;align-items:center;gap:8px;}
+  .logo span{color:var(--blue);}
+  nav{display:flex;gap:32px;}
+  nav a{color:var(--text-body);text-decoration:none;font-weight:600;font-size:14px;padding:6px 0;}
+  nav a:hover{color:var(--blue);}
+  .menu-toggle{display:none;background:none;border:1px solid var(--border);border-radius:8px;width:40px;height:40px;font-size:20px;cursor:pointer;color:var(--navy);}
+  @media (max-width:768px){
+    nav{
+      display:flex;flex-direction:column;gap:0;
+      position:absolute;top:100%;left:0;right:0;
+      background:#fff;border-bottom:1px solid var(--border);
+      box-shadow:0 8px 16px rgba(0,0,0,0.08);
+      max-height:0;overflow:hidden;
+      transition:max-height .3s ease;
+    }
+    nav.open{max-height:300px;}
+    nav a{padding:16px 24px;border-top:1px solid var(--border);}
+    header .header-inner > a.btn{display:none;}
+    .menu-toggle{display:block;}
+  }
+
+  /* ===== HERO ===== */
+  .hero-section{padding:32px 24px 0;}
+  .hero-card{
+    max-width:1184px;margin:0 auto;
+    border:1px solid rgba(192,199,211,0.35);
+    border-radius:24px;
+    padding:48px 40px 56px;
+    background:
+      linear-gradient(135deg, rgba(247,249,255,0.92) 0%, rgba(230,247,242,0.86) 50%, rgba(247,249,255,0.94) 100%),
+      radial-gradient(circle at 20% 20%, #d7eaff 0%, transparent 55%),
+      radial-gradient(circle at 80% 80%, #d4f5e6 0%, transparent 55%);
+    box-shadow:var(--shadow-card);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;}
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} .hero-card{padding:32px 24px 40px;} }
+
+  .badge-tag{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--bg-badge);color:var(--blue-dark);
+    font-weight:700;font-size:12px;letter-spacing:0.3px;
+    padding:6px 16px;border-radius:9999px;margin-bottom:16px;
+  }
+  .hero-title{font-size:40px;font-weight:800;line-height:1.25;letter-spacing:-1px;color:var(--navy);margin-bottom:16px;}
+  .hero-title .accent{color:var(--blue);}
+  .hero-copy{font-size:16px;color:var(--text-body);max-width:560px;margin-bottom:12px;}
+  .hero-subcopy{font-size:14px;color:var(--text-muted);max-width:520px;margin-bottom:24px;}
+
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;
+    padding:14px 28px;border-radius:8px;border:none;cursor:pointer;
+    text-decoration:none;transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .btn-primary{background:var(--blue);color:#fff;box-shadow:0 4px 6px -1px rgba(0,0,0,.10),0 2px 4px -2px rgba(0,0,0,.10);}
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-white{background:#fff;color:var(--blue-dark);box-shadow:0 1px 1px rgba(0,0,0,.05);}
+  .btn-white:hover{transform:translateY(-2px);}
+
+  .trust-indicators{display:flex;gap:24px;flex-wrap:wrap;}
+  .trust-indicators span{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:12px;color:var(--text-body);}
+  .trust-indicators .dot{width:15px;height:15px;color:var(--blue);}
+
+  .hero-visual{
+    background:var(--bg-badge);border-radius:16px;padding:12px;
+    box-shadow:var(--shadow-lift);
+  }
+  .hero-photo{
+    height:340px;border-radius:12px;
+    background:linear-gradient(135deg,#0879c9 0%, #063a63 100%);
+    position:relative;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+    font-size:90px;
+  }
+  .hero-photo::after{
+    content:"";position:absolute;inset:0;
+    background:repeating-linear-gradient(115deg, rgba(255,255,255,.06) 0 2px, transparent 2px 26px);
+  }
+  .floating-badge{
+    margin-top:12px;background:rgba(255,255,255,0.95);backdrop-filter:blur(6px);
+    border-radius:12px;padding:16px;display:flex;gap:12px;align-items:center;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,.10),0 2px 4px -2px rgba(0,0,0,.10);
+  }
+  .floating-badge .icon-box{
+    background:var(--bg-badge-2);border-radius:8px;width:40px;height:40px;
+    display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;
+  }
+  .floating-badge .fb-label{font-size:10px;font-weight:700;letter-spacing:0.5px;color:var(--blue-dark);text-transform:uppercase;}
+  .floating-badge .fb-title{font-size:15px;font-weight:600;color:var(--navy);margin-top:2px;}
+
+  /* ===== SECTION SHELL ===== */
+  section{padding:80px 24px;}
+  .section-head{text-align:center;max-width:672px;margin:0 auto 48px;}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
+  .section-title{font-size:34px;font-weight:800;color:var(--navy);margin-bottom:16px;}
+  .section-desc{font-size:16px;color:var(--text-muted);}
+
+  /* ===== TRUST STRIP ===== */
+  .trust-strip{padding:48px 24px;background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+  .trust-grid{max-width:1184px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  @media (max-width:900px){ .trust-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .trust-grid{grid-template-columns:1fr;} }
+  .trust-card{display:flex;gap:16px;align-items:flex-start;}
+  .trust-icon{width:44px;height:44px;border-radius:10px;background:var(--bg-badge);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+  .trust-card h4{font-size:16px;margin-bottom:4px;}
+  .trust-card p{font-size:13px;color:var(--text-muted);}
+
+  /* ===== SERVICES ===== */
+  .services-grid{max-width:1184px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  @media (max-width:900px){ .services-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .services-grid{grid-template-columns:1fr;} }
+  .service-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;transition:box-shadow .25s, transform .25s;}
+  .service-card:hover{box-shadow:var(--shadow-lift);transform:translateY(-6px);}
+  .service-icon{width:48px;height:48px;border-radius:10px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;}
+  .service-card h3{font-size:18px;margin-bottom:12px;}
+  .service-card p{font-size:14px;color:var(--text-muted);margin-bottom:20px;line-height:1.7;}
+  .service-tag{display:inline-block;background:var(--bg-badge);color:var(--blue-dark);font-size:12px;font-weight:700;padding:8px 12px;border-radius:8px;}
+
+  /* ===== HOW IT WORKS ===== */
+  .steps-strip{background:#fff;}
+  .steps-grid{max-width:1184px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  @media (max-width:900px){ .steps-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .steps-grid{grid-template-columns:1fr;} }
+  .step-card{position:relative;}
+  .step-num{
+    width:40px;height:40px;border-radius:10px;background:var(--navy);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;margin-bottom:24px;
+  }
+  .step-card h4{font-size:17px;margin-bottom:10px;}
+  .step-card p{font-size:14px;color:var(--text-muted);}
+
+  /* ===== PRODUCTS ===== */
+  .products-section{background:var(--bg-page);}
+  .products-head{max-width:1184px;margin:0 auto 32px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;}
+  .products-head h2{font-size:32px;}
+  .products-head p{color:var(--text-muted);font-size:15px;max-width:520px;margin-top:8px;}
+  .products-actions{display:flex;gap:12px;}
+  .chip-btn{background:#fff;border:1px solid var(--border);color:var(--text-body);font-weight:600;font-size:13px;padding:10px 18px;border-radius:8px;cursor:pointer;}
+  .chip-btn.active{background:var(--blue);color:#fff;border-color:var(--blue);}
+
+  .products-layout{max-width:1184px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr;gap:24px;align-items:start;}
+  @media (max-width:960px){ .products-layout{grid-template-columns:1fr;} }
+  .product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+  @media (max-width:600px){ .product-grid{grid-template-columns:1fr;} }
+
+  .product-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;}
+  .product-image{height:176px;background:linear-gradient(135deg,var(--blue) 0%, var(--navy) 100%);display:flex;align-items:center;justify-content:center;font-size:56px;position:relative;}
+  .product-cat{position:absolute;top:12px;left:12px;background:rgba(255,255,255,0.92);color:var(--blue-dark);font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;}
+  .product-body{padding:20px;}
+  .product-body h3{font-size:17px;margin-bottom:8px;line-height:1.4;}
+  .product-body p{font-size:13.5px;color:var(--text-muted);margin-bottom:16px;line-height:1.6;}
+  .product-actions-row{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .qty-box{display:flex;align-items:center;border:1px solid var(--border);border-radius:8px;}
+  .qty-box button{width:32px;height:32px;border:none;background:none;font-size:16px;cursor:pointer;color:var(--text-body);}
+  .qty-box .qty-val{width:30px;text-align:center;font-weight:700;font-size:14px;}
+  .add-btn{flex:1;background:var(--bg-badge);color:var(--blue-dark);border:none;padding:8px 14px;border-radius:8px;font-weight:700;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;}
+  .add-btn:hover{background:var(--bg-badge-2);}
+
+  .summary-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;box-shadow:var(--shadow-card);position:sticky;top:90px;}
+  .summary-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:12px;}
+  .summary-head h3{font-size:16px;display:flex;align-items:center;gap:8px;}
+  .summary-badge{background:var(--bg-badge);color:var(--blue-dark);font-size:11px;font-weight:800;padding:4px 10px;border-radius:12px;}
+  .summary-empty{font-size:13.5px;color:var(--text-muted);padding:24px 0;text-align:center;}
+  .summary-item{display:flex;justify-content:space-between;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--border);font-size:13.5px;}
+  .summary-item .si-name{font-weight:600;color:var(--navy);}
+  .summary-item .si-qty{color:var(--text-muted);font-size:12.5px;}
+  .summary-footer{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);text-align:center;}
+  .summary-footer a{color:var(--blue);font-weight:700;font-size:13.5px;text-decoration:none;}
+
+  /* ===== FORM SECTION ===== */
+  .form-section{background:#fff;}
+  .form-layout{max-width:1184px;margin:0 auto;display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start;}
+  @media (max-width:960px){ .form-layout{grid-template-columns:1fr;} }
+  .form-copy .eyebrow{text-align:left;}
+  .form-copy h2{font-size:36px;margin-bottom:16px;}
+  .form-copy > p{font-size:16px;color:var(--text-muted);margin-bottom:32px;}
+
+  .assurance-card{background:var(--bg-page);border-radius:var(--radius-md);padding:16px;}
+  .assurance-item{display:flex;gap:16px;padding:16px 8px;}
+  .assurance-item + .assurance-item{border-top:1px solid var(--border);}
+  .assurance-icon{width:32px;height:32px;border-radius:8px;background:var(--bg-badge-2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+  .assurance-item h5{font-size:15px;margin-bottom:4px;}
+  .assurance-item p{font-size:13.5px;color:var(--text-muted);}
+
+  .form-note{display:flex;gap:8px;align-items:center;margin-top:24px;font-size:13px;color:var(--text-muted);}
+
+  .form-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-lift);}
+  .form-card h3{font-size:22px;margin-bottom:6px;}
+  .form-card .fc-sub{font-size:13.5px;color:var(--text-muted);margin-bottom:24px;}
+
+  .form-msg{display:none;padding:14px 16px;border-radius:8px;margin-bottom:20px;font-size:14px;border-left:4px solid;}
+  .form-msg.show{display:block;}
+  .form-msg.success{background:rgba(26,138,74,0.08);color:var(--success);border-color:var(--success);}
+  .form-msg.error{background:rgba(214,69,69,0.08);color:var(--error);border-color:var(--error);}
+  .submission-id{display:inline-block;margin-top:6px;font-family:monospace;font-weight:700;background:rgba(0,0,0,0.05);padding:6px 10px;border-radius:6px;}
+
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  @media (max-width:480px){ .frow{grid-template-columns:1fr;} }
+  .fgroup label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+  .fgroup label .req{color:var(--error);}
+  .fgroup input, .fgroup select, .fgroup textarea{
+    width:100%;padding:13px 16px;border:1px solid var(--border);border-radius:8px;
+    font-family:inherit;font-size:14px;color:var(--navy);background:#fff;
+  }
+  .fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus{
+    outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(8,121,201,0.12);
+  }
+  .fgroup textarea{min-height:92px;resize:vertical;}
+  .fgroup.error input, .fgroup.error select, .fgroup.error textarea{border-color:var(--error);}
+  .fgroup .err-msg{color:var(--error);font-size:12px;margin-top:5px;display:none;}
+  .fgroup.error .err-msg{display:block;}
+  .ffull{grid-column:1/-1;}
+
+  .product-rows{border:1px solid var(--border);border-radius:10px;padding:8px;margin-bottom:8px;}
+  .prow{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;padding:8px;align-items:center;}
+  .prow + .prow{border-top:1px solid var(--border);}
+  .prow select, .prow input{padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:13.5px;font-family:inherit;}
+  .prow .row-remove{background:none;border:none;color:var(--error);font-size:18px;cursor:pointer;width:28px;}
+  @media (max-width:600px){ .prow{grid-template-columns:1fr;} }
+  .add-row-btn{background:none;border:none;color:var(--blue);font-weight:700;font-size:13.5px;cursor:pointer;padding:8px 4px;display:inline-flex;align-items:center;gap:6px;}
+
+  .submit-btn{
+    width:100%;margin-top:24px;padding:16px;border:none;border-radius:8px;
+    background:var(--blue);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,.10);
+  }
+  .submit-btn:hover:not(:disabled){transform:translateY(-2px);}
+  .submit-btn:disabled{opacity:.65;cursor:not-allowed;}
+  .spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .disclaimer{font-size:12px;color:var(--text-muted);text-align:center;margin-top:16px;}
+
+  /* ===== WHY CHOOSE ===== */
+  .why-grid{max-width:1184px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  @media (max-width:900px){ .why-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .why-grid{grid-template-columns:1fr;} }
+  .why-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;}
+  .why-icon{width:40px;height:40px;border-radius:10px;background:var(--bg-badge);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:20px;}
+  .why-card h4{font-size:16px;margin-bottom:10px;}
+  .why-card p{font-size:13.5px;color:var(--text-muted);}
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials-section{background:#fff;}
+  .testi-grid{max-width:1184px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media (max-width:900px){ .testi-grid{grid-template-columns:1fr;} }
+  .testi-card{background:var(--bg-page);border-radius:var(--radius-md);padding:24px;}
+  .testi-quote{font-size:14.5px;color:var(--navy);margin-bottom:20px;line-height:1.7;}
+  .testi-author{display:flex;gap:12px;align-items:center;border-top:1px solid var(--border);padding-top:16px;}
+  .testi-avatar{width:40px;height:40px;border-radius:50%;background:var(--bg-badge-2);color:var(--blue-dark);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;}
+  .testi-author h5{font-size:14px;}
+  .testi-author span{font-size:12px;color:var(--text-muted);}
+
+  .testi-strip{max-width:1184px;margin:48px auto 0;display:flex;justify-content:space-between;align-items:center;background:var(--navy);border-radius:var(--radius-md);padding:28px 32px;flex-wrap:wrap;gap:16px;}
+  .testi-strip h4{color:#fff;font-size:18px;}
+  .testi-strip p{color:#c9d6e6;font-size:13.5px;margin-top:4px;}
+  .testi-strip a{color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-bottom:2px solid var(--blue);padding-bottom:2px;}
+
+  /* ===== FAQ ===== */
+  .faq-list{max-width:896px;margin:0 auto;}
+  .faq-item{border:1px solid var(--border);border-radius:10px;margin-bottom:12px;overflow:hidden;background:#fff;}
+  .faq-q{width:100%;background:none;border:none;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;color:var(--navy);cursor:pointer;text-align:left;}
+  .faq-q .chev{transition:transform .25s;color:var(--blue);font-size:14px;}
+  .faq-item.open .faq-q .chev{transform:rotate(180deg);}
+  .faq-a{display:none;padding:0 20px 20px;font-size:14px;color:var(--text-muted);line-height:1.7;}
+  .faq-item.open .faq-a{display:block;}
+
+  /* ===== FINAL CTA ===== */
+  .cta-section{background:linear-gradient(135deg, var(--navy) 0%, #063a63 100%);color:#fff;text-align:center;}
+  .cta-section h2{color:#fff;font-size:36px;margin-bottom:16px;}
+  .cta-section p{color:#c9d6e6;font-size:16px;max-width:640px;margin:0 auto 32px;}
+  .cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .btn-cta-primary{background:var(--blue);color:#fff;box-shadow:0 4px 6px -1px rgba(0,0,0,.2);}
+  .btn-cta-secondary{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.4);}
+
+  footer{background:var(--navy);color:#c9d6e6;text-align:center;padding:32px 24px;font-size:13.5px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">💧 VELA <span>TRADERS</span></div>
+    <nav id="mainNav">
+      <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#services" onclick="closeMenu()">Services</a>
+      <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#products" onclick="closeMenu()">Products</a>
+      <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#faq" onclick="closeMenu()">FAQ</a>
+      <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#form" onclick="closeMenu()">Request a Supply</a>
+    </nav>
+    <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#form" class="btn btn-primary" style="padding:10px 20px;">Request a Supply</a>
+    <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-card">
+    <div class="hero-grid">
+      <div>
+        <div class="badge-tag">✓ Official Water &amp; Beverage Supply Partner</div>
+        <h1 class="hero-title">Your Trusted Partner for <span class="accent">Water &amp; Beverage</span> Supply</h1>
+        <p class="hero-copy">Vela Traders makes it easy for shops, dealers, businesses, and event organizers to get the water and refreshing beverages they need—when they need them.</p>
+        <p class="hero-subcopy">From regular shop supplies to bulk event requirements, simply tell us which products you need and how much you require. We'll take care of the rest.</p>
+        <div class="cta-row">
+          <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#form" class="btn btn-primary">🚚 Request a Supply</a>
+          <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#form" class="btn btn-white">💬 Talk to Us</a>
+        </div>
+        <div class="trust-indicators">
+          <span>✓ Reliable Supply</span>
+          <span>📋 Flexible Quantities</span>
+          <span>✓ Easy Ordering</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo">📦🚛</div>
+        <div class="floating-badge">
+          <div class="icon-box">✓</div>
+          <div>
+            <div class="fb-label">Authorized Stock</div>
+            <div class="fb-title">Campa • Tilo • Packaged Water • Bulk Crates</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="trust-grid">
+    <div class="trust-card"><div class="trust-icon">✓</div><div><h4>Verified Quality</h4><p>Safety and hygiene standards on every product</p></div></div>
+    <div class="trust-card"><div class="trust-icon">📦</div><div><h4>Quick Dispatch</h4><p>Fast, reliable delivery to your location</p></div></div>
+    <div class="trust-card"><div class="trust-icon">💼</div><div><h4>Business Friendly</h4><p>Designed for shops, dealers, and events</p></div></div>
+    <div class="trust-card"><div class="trust-icon">🤝</div><div><h4>Personal Support</h4><p>Every order coordinated personally</p></div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-head">
+    <p class="eyebrow">What We Offer</p>
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-desc">Vela Traders supports your business with flexible, organized supply solutions.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card"><div class="service-icon">🏪</div><h3>Regular Shop Supply</h3><p>Keep your shelves stocked with the products your customers ask for, with convenient regular supply options.</p><span class="service-tag">Weekly • Bi-weekly</span></div>
+    <div class="service-card"><div class="service-icon">📈</div><h3>Dealer Supply</h3><p>We support dealers with organized product requirements and bulk supply coordination.</p><span class="service-tag">High-volume fulfillment</span></div>
+    <div class="service-card"><div class="service-icon">🎉</div><h3>Event Supply</h3><p>Planning an event? Vela Traders can help you arrange the right products and quantities for your guests.</p><span class="service-tag">Weddings • Corporate</span></div>
+    <div class="service-card"><div class="service-icon">⭐</div><h3>Multiple Brands</h3><p>Choose the brands and individual products you need based on your customers, business, or event requirements.</p><span class="service-tag">Single-order consolidation</span></div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps-strip">
+  <div class="section-head">
+    <p class="eyebrow">Getting Started</p>
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-desc">Simple, transparent, and organized from start to finish.</p>
+  </div>
+  <div class="steps-grid">
+    <div class="step-card"><div class="step-num">1</div><h4>Choose Your Products</h4><p>Select the brands and products you want from your preferred range.</p></div>
+    <div class="step-card"><div class="step-num">2</div><h4>Tell Us Your Quantity</h4><p>Let us know exactly how many bottles, cases, or units you need.</p></div>
+    <div class="step-card"><div class="step-num">3</div><h4>Share Your Details</h4><p>Enter your contact and delivery information so our team can reach you.</p></div>
+    <div class="step-card"><div class="step-num">4</div><h4>We Coordinate Supply</h4><p>The Vela Traders team reviews your requirement and confirms dispatch details.</p></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="products">
+  <div class="products-head">
+    <div>
+      <p class="eyebrow" style="text-align:left;">Available Products</p>
+      <h2>Our Range</h2>
+      <p>Quality beverages and water products for your needs.</p>
+    </div>
+    <div class="products-actions">
+      <button class="chip-btn active" onclick="filterProducts('All', this)">All</button>
+      <button class="chip-btn" onclick="filterProducts('Water', this)">Water</button>
+      <button class="chip-btn" onclick="filterProducts('Beverages', this)">Beverages</button>
+    </div>
+  </div>
+
+  <div class="products-layout">
+    <div class="product-grid" id="productGrid">
+      <div class="product-card" data-category="Water">
+        <div class="product-image"><span class="product-cat">WATER</span>💧</div>
+        <div class="product-body">
+          <h3>Packaged Drinking Water (20L Jar)</h3>
+          <p>Multi-stage filtered, sanitized jars for corporate offices and residences.</p>
+          <div class="product-actions-row">
+            <div class="qty-box"><button type="button" onclick="decQty(this)">−</button><div class="qty-val">1</div><button type="button" onclick="incQty(this)">+</button></div>
+            <button type="button" class="add-btn" onclick="addItem('Packaged Drinking Water (20L Jar)', this)">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="Water">
+        <div class="product-image"><span class="product-cat">WATER</span>🥤</div>
+        <div class="product-body">
+          <h3>500ml Bottled Water Case (24 Pcs)</h3>
+          <p>Compact, sealed bottles ideal for events, conferences, and retail shelves.</p>
+          <div class="product-actions-row">
+            <div class="qty-box"><button type="button" onclick="decQty(this)">−</button><div class="qty-val">1</div><button type="button" onclick="incQty(this)">+</button></div>
+            <button type="button" class="add-btn" onclick="addItem('500ml Bottled Water Case (24 Pcs)', this)">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="Beverages">
+        <div class="product-image"><span class="product-cat">BEVERAGE</span>🥛</div>
+        <div class="product-body">
+          <h3>Campa Cola &amp; Flavors Case</h3>
+          <p>Iconic sparkling soft drinks available in multiple flavors for retail and stalls.</p>
+          <div class="product-actions-row">
+            <div class="qty-box"><button type="button" onclick="decQty(this)">−</button><div class="qty-val">1</div><button type="button" onclick="incQty(this)">+</button></div>
+            <button type="button" class="add-btn" onclick="addItem('Campa Cola &amp; Flavors Case', this)">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="Beverages">
+        <div class="product-image"><span class="product-cat">BEVERAGE</span>🍊</div>
+        <div class="product-body">
+          <h3>Tilo Refreshing Beverages</h3>
+          <p>High-demand fruit-flavored drinks packaged for fast-turnaround retail coolers.</p>
+          <div class="product-actions-row">
+            <div class="qty-box"><button type="button" onclick="decQty(this)">−</button><div class="qty-val">1</div><button type="button" onclick="incQty(this)">+</button></div>
+            <button type="button" class="add-btn" onclick="addItem('Tilo Refreshing Beverages', this)">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-card">
+      <div class="summary-head">
+        <h3>🧾 Your Requirement</h3>
+        <span class="summary-badge" id="summaryCount">0 items</span>
+      </div>
+      <div id="summaryList">
+        <div class="summary-empty" id="summaryEmpty">No products added yet.<br>Click "Add" on any product.</div>
+      </div>
+      <div class="summary-footer">
+        <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#form">Continue to order form →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="form">
+  <div class="form-layout">
+    <div class="form-copy">
+      <p class="eyebrow">Request a Supply</p>
+      <h2>Tell Vela Traders What You Need</h2>
+      <p>Planning your next stock order or arranging beverages for an event? Share your requirements with Vela Traders, and our team will help you coordinate the products and quantities you need.</p>
+
+      <div class="assurance-card">
+        <div class="assurance-item"><div class="assurance-icon">📋</div><div><h5>Organized Requirements</h5><p>We keep track of your product selections and quantities in one place.</p></div></div>
+        <div class="assurance-item"><div class="assurance-icon">🔒</div><div><h5>Secure Information</h5><p>Your data is protected and used only to coordinate your delivery.</p></div></div>
+        <div class="assurance-item"><div class="assurance-icon">📞</div><div><h5>Personal Coordination</h5><p>Our logistics team reaches out to confirm all details and arrange delivery.</p></div></div>
+      </div>
+
+      <div class="form-note">🔒 Your information is only used to process and deliver your order.</div>
+    </div>
+
+    <div class="form-card">
+      <h3>Request a Supply</h3>
+      <p class="fc-sub">Fill in the fields below and our logistics coordinator will connect with you.</p>
+
+      <div id="formMessage" class="form-msg"></div>
+
+      <form id="supplyForm">
+        <div class="frow">
+          <div class="fgroup"><label>Full Name <span class="req">*</span></label><input type="text" id="fullName" placeholder="e.g. Karthik Subramaniam" required=""><div class="err-msg">This field is required</div></div>
+          <div class="fgroup"><label>Business / Shop Name</label><input type="text" id="shopName" placeholder="e.g. Murugan Stores" required=""><div class="err-msg">This field is required</div></div>
+        </div>
+        <div class="frow">
+          <div class="fgroup"><label>Phone Number <span class="req">*</span></label><input type="tel" id="phone" placeholder="+91 98765 43210" required=""><div class="err-msg">Enter a valid phone number</div></div>
+          <div class="fgroup"><label>Location / City Area <span class="req">*</span></label><input type="text" id="location" placeholder="e.g. Sector 18, Commercial Hub" required=""><div class="err-msg">This field is required</div></div>
+        </div>
+        <div class="frow">
+          <div class="fgroup"><label>Email Address</label><input type="email" id="email" placeholder="your@email.com"><div class="err-msg">Enter a valid email</div></div>
+          <div class="fgroup"><label>Ordering For</label>
+            <select id="orderingFor">
+              <option value="Retail Shop">Retail Shop</option>
+              <option value="Dealer">Dealer</option>
+              <option value="Event">Event</option>
+              <option value="Household / Office">Household / Office</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="fgroup ffull" style="margin-bottom:16px;">
+          <label>Product Requirements</label>
+          <div class="product-rows" id="productRows">
+            <div class="prow">
+              <select class="row-category">
+                <option value="Water">Drinking Water</option>
+                <option value="Beverages">Campa</option>
+                <option value="Beverages">Tilo</option>
+                <option value="Other">Other</option>
+              </select>
+              <input type="text" class="row-product" placeholder="e.g. 20L Purified Water Jars">
+              <input type="text" class="row-qty" placeholder="e.g. 20 units">
+            </div>
+          </div>
+          <button type="button" class="add-row-btn" onclick="addProductRow()">+ Add another product</button>
+        </div>
+
+        <div class="frow">
+          <div class="fgroup"><label>Quantity (primary product) <span class="req">*</span></label><input type="number" id="quantity" min="1" placeholder="e.g. 50" required=""><div class="err-msg">Quantity must be greater than 0</div></div>
+          <div class="fgroup"><label>Preferred Delivery Date</label><input type="date" id="deliveryDate"></div>
+        </div>
+
+        <div class="fgroup ffull" style="margin-bottom:16px;">
+          <label>Additional Requirements / Message</label>
+          <textarea id="notes" placeholder="Tell us if you have any special instructions, unload requirements, or recurring supply needs..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span id="submitBtnText">🚚 Submit Requirement</span>
+          <span id="submitBtnSpinner" class="spinner" style="display:none;"></span>
+        </button>
+        <p class="disclaimer">Your information is secure and used only to coordinate your delivery. * Required fields.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section>
+  <div class="section-head">
+    <p class="eyebrow">Our Advantages</p>
+    <h2 class="section-title">Why Choose Vela Traders</h2>
+    <p class="section-desc">We are committed to making your ordering process smooth and efficient.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card"><div class="why-icon">✨</div><h4>Easy Ordering</h4><p>Share your product and quantity requirements in one convenient place.</p></div>
+    <div class="why-card"><div class="why-icon">🎯</div><h4>Flexible Requirements</h4><p>Request different brands and quantities based on your exact dynamic needs.</p></div>
+    <div class="why-card"><div class="why-icon">💼</div><h4>Business-Friendly</h4><p>Designed around the practical schedules of shops, dealers, and events.</p></div>
+    <div class="why-card"><div class="why-icon">👥</div><h4>Personal Support</h4><p>Our responsive team personally coordinates your enquiry and fulfillment.</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="section-head">
+    <p class="eyebrow">Customer Stories</p>
+    <h2 class="section-title">What Our Customers Say</h2>
+    <p class="section-desc">Hear from shops, dealers, and event organizers who trust Vela Traders.</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card"><p class="testi-quote">"The ordering process is simple, and the supply is well coordinated. It makes managing our regular shop stock much easier."</p><div class="testi-author"><div class="testi-avatar">M</div><div><h5>Murugan Selvam</h5><span>Local Retail Shop Owner</span></div></div></div>
+    <div class="testi-card"><p class="testi-quote">"We needed beverages in larger quantities for an event, and Vela Traders helped us organize the requirement properly. The whole process was convenient."</p><div class="testi-author"><div class="testi-avatar">K</div><div><h5>Kalaivani Raman</h5><span>Event Coordinator</span></div></div></div>
+    <div class="testi-card"><p class="testi-quote">"Having different products available through one supplier saves us a lot of time. We can share our requirements and coordinate the order easily."</p><div class="testi-author"><div class="testi-avatar">S</div><div><h5>Senthil Kumar</h5><span>Authorized Dealer</span></div></div></div>
+  </div>
+  <div class="testi-strip">
+    <div><h4>Join hundreds of satisfied shops and dealers</h4><p>Consistent supply, coordinated delivery, one trusted partner.</p></div>
+    <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#form">Request a Supply →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-head">
+    <p class="eyebrow">Questions?</p>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-desc">Get answers to common questions about ordering and delivery.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item open"><button class="faq-q" onclick="toggleFaq(this)">How do I place an order? <span class="chev">▾</span></button><div class="faq-a">Fill out the order form on this page with your product selection, quantity, and delivery details. Our team will review your requirement and contact you to confirm the details and delivery schedule.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is the minimum order quantity? <span class="chev">▾</span></button><div class="faq-a">Order quantities can be customized based on your needs. Please mention your requirement in the form, and our team will confirm feasibility and provide options.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How quickly can you deliver? <span class="chev">▾</span></button><div class="faq-a">Delivery timelines depend on your location and order size. Once you submit your requirement, our logistics team will confirm the delivery date.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I request regular recurring supplies? <span class="chev">▾</span></button><div class="faq-a">Yes. We support weekly, bi-weekly, and monthly regular supply arrangements. Select "Regular Supply" in the order type and our team will help set up a schedule.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are the products authentic and quality-assured? <span class="chev">▾</span></button><div class="faq-a">All products supplied by Vela Traders are from authorized distributors and meet safety and hygiene standards.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I mix different products in one order? <span class="chev">▾</span></button><div class="faq-a">Absolutely. We support orders with multiple products and brands consolidated into a single delivery.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How is my payment processed? <span class="chev">▾</span></button><div class="faq-a">After our team confirms your order details, we'll provide payment and delivery instructions with transparent pricing.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can you arrange supplies for events? <span class="chev">▾</span></button><div class="faq-a">Yes, we specialize in event supply coordination. Select "Event Supply" and share your event details in the notes field.</div></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <h2>Ready to Streamline Your Supply?</h2>
+  <p>Let Vela Traders handle your beverage and water supply needs. Place an order today and experience convenient, coordinated delivery.</p>
+  <div class="cta-buttons">
+    <a href="file:///C:/Users/ESAKKI%20BALA%20S/Downloads/vela-traders-figma-match%20(1).html#form" class="btn btn-cta-primary">Request a Supply</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Vela Traders. All rights reserved. Quality beverages &amp; water supply solutions for your business.
+</footer>
+
+<script>
+  // *** YOUR GOOGLE APPS SCRIPT WEB APP URL ***
+  const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzN_dVbcIjRPl78CDexytOt1Y1ewKz4VwujTitwU5izunLXrZiyYyoOU7kCp70raZVpPg/exec";
+
+  /* ---- Product quantity controls ---- */
+  function incQty(btn){
+    const d = btn.parentElement.querySelector('.qty-val');
+    d.textContent = parseInt(d.textContent) + 1;
+  }
+  function decQty(btn){
+    const d = btn.parentElement.querySelector('.qty-val');
+    const v = parseInt(d.textContent);
+    if(v > 1) d.textContent = v - 1;
+  }
+
+  /* ---- Mobile menu ---- */
+  function toggleMenu(){
+    document.getElementById('mainNav').classList.toggle('open');
+  }
+  function closeMenu(){
+    document.getElementById('mainNav').classList.remove('open');
+  }
+
+  /* ---- Product category filter chips ---- */
+  function filterProducts(category, btn){
+    document.querySelectorAll('.chip-btn').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#productGrid .product-card').forEach(card => {
+      const cat = card.getAttribute('data-category');
+      card.style.display = (category === 'All' || cat === category) ? '' : 'none';
+    });
+  }
+
+  /* ---- Live requirement summary + product rows in the form ---- */
+  const cart = [];
+  function addItem(name, btn){
+    const qty = btn.closest('.product-actions-row').querySelector('.qty-val').textContent;
+    cart.push({name, qty});
+    renderSummary();
+    // also push into the product requirement rows in the form
+    fillProductRow(name, qty);
+  }
+  function renderSummary(){
+    const list = document.getElementById('summaryList');
+    const empty = document.getElementById('summaryEmpty');
+    const count = document.getElementById('summaryCount');
+    count.textContent = cart.length + (cart.length === 1 ? ' item' : ' items');
+    if(cart.length === 0){
+      list.innerHTML = '<div class="summary-empty" id="summaryEmpty">No products added yet.<br>Click "Add" on any product.</div>';
+      return;
+    }
+    list.innerHTML = cart.map(i => `
+      <div class="summary-item">
+        <div><div class="si-name">${i.name}</div><div class="si-qty">Qty: ${i.qty}</div></div>
+      </div>
+    `).join('');
+  }
+
+  function fillProductRow(name, qty){
+    const rows = document.querySelectorAll('#productRows .prow');
+    let target = null;
+    rows.forEach(r => { if(!r.querySelector('.row-product').value.trim()) target = target || r; });
+    if(!target){
+      addProductRow();
+      const all = document.querySelectorAll('#productRows .prow');
+      target = all[all.length - 1];
+    }
+    target.querySelector('.row-product').value = name;
+    target.querySelector('.row-qty').value = qty + ' units';
+  }
+
+  function addProductRow(){
+    const wrap = document.getElementById('productRows');
+    const row = document.createElement('div');
+    row.className = 'prow';
+    row.innerHTML = `
+      <select class="row-category">
+        <option value="Water">Drinking Water</option>
+        <option value="Beverages">Campa</option>
+        <option value="Beverages">Tilo</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="text" class="row-product" placeholder="Product name">
+      <input type="text" class="row-qty" placeholder="e.g. 20 units">
+      <button type="button" class="row-remove" onclick="this.closest('.prow').remove()">✕</button>
+    `;
+    wrap.appendChild(row);
+  }
+
+  /* ---- FAQ accordion ---- */
+  function toggleFaq(btn){
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item.open').forEach(o => { if(o !== item) o.classList.remove('open'); });
+    item.classList.toggle('open');
+  }
+
+  /* ---- Form submit ---- */
+  const form = document.getElementById('supplyForm');
+  const messageDiv = document.getElementById('formMessage');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitBtnText = document.getElementById('submitBtnText');
+  const submitBtnSpinner = document.getElementById('submitBtnSpinner');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    messageDiv.classList.remove('show','success','error');
+    clearErrors();
+    if(!validateForm()) return;
+
+    submitBtn.disabled = true;
+    submitBtnText.style.display = 'none';
+    submitBtnSpinner.style.display = 'inline-block';
+
+    // Gather product requirement rows into one summary string, and use the first row as the "product" field
+    const rows = Array.from(document.querySelectorAll('#productRows .prow')).map(r => ({
+      category: r.querySelector('.row-category').value,
+      product: r.querySelector('.row-product').value.trim(),
+      qty: r.querySelector('.row-qty').value.trim()
+    })).filter(r => r.product);
+
+    const primary = rows[0] || {category:'', product:'', qty:''};
+    const allProductsText = rows.map(r => `${r.product} (${r.qty})`).join('; ');
+
+    // Generate the submission ID here so it's guaranteed to display correctly
+    // even though the browser cannot read Google's response (see note below).
+    const submissionId = "VT-" + Date.now().toString().slice(-6) + Math.random().toString(36).substring(2, 8).toUpperCase();
+
+    const payload = {
+      submissionId: submissionId,
+      contactPerson: document.getElementById('fullName').value.trim(),
+      customerName: document.getElementById('shopName').value.trim(),
+      mobileNumber: document.getElementById('phone').value.trim(),
+      deliveryLocation: document.getElementById('location').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      address: '',
+      product: primary.product || allProductsText,
+      category: primary.category,
+      quantity: document.getElementById('quantity').value.trim(),
+      unit: '',
+      deliveryDate: document.getElementById('deliveryDate').value.trim(),
+      orderType: document.getElementById('orderingFor').value,
+      additionalNotes: (allProductsText ? 'Products requested: ' + allProductsText + '. ' : '') + document.getElementById('notes').value.trim()
+    };
+
+    try {
+      // mode: 'no-cors' is required here. Google Apps Script redirects every
+      // POST response through script.googleusercontent.com, and that redirect
+      // doesn't carry CORS headers — so a normal fetch() throws "Failed to
+      // fetch" even when the script ran and saved the row successfully.
+      // no-cors sends the request and ignores the unreadable response,
+      // which is what we want since we already have the submission ID above.
+      await fetch(GOOGLE_APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: JSON.stringify(payload)
+      });
+
+      showSuccess(submissionId);
+      form.reset();
+      cart.length = 0;
+      renderSummary();
+    } catch(err){
+      console.error('Submit failed:', err);
+      showError('Could not reach the server (' + err.name + ': ' + err.message + '). Please check your internet connection and try again.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtnText.style.display = 'inline';
+      submitBtnSpinner.style.display = 'none';
+      messageDiv.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  });
+
+  function validateForm(){
+    let ok = true;
+    const req = ['fullName','shopName','phone','location','quantity'];
+    req.forEach(id => {
+      const f = document.getElementById(id);
+      if(!f.value.trim()){ fieldError(f); ok = false; }
+    });
+    const phone = document.getElementById('phone').value.trim();
+    if(phone && !/^[0-9]{10,}$/.test(phone.replace(/\D/g,''))){ fieldError(document.getElementById('phone')); ok = false; }
+    const email = document.getElementById('email').value.trim();
+    if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ fieldError(document.getElementById('email')); ok = false; }
+    const qty = document.getElementById('quantity').value;
+    if(qty && (isNaN(qty) || parseInt(qty) <= 0)){ fieldError(document.getElementById('quantity')); ok = false; }
+    return ok;
+  }
+  function fieldError(field){ field.closest('.fgroup').classList.add('error'); }
+  function clearErrors(){ document.querySelectorAll('.fgroup.error').forEach(g => g.classList.remove('error')); }
+  document.querySelectorAll('.fgroup input, .fgroup select').forEach(f => {
+    f.addEventListener('input', function(){ this.closest('.fgroup').classList.remove('error'); });
+  });
+
+  function showSuccess(id){
+    messageDiv.innerHTML = `<strong>✓ Your requirement has been submitted!</strong><br>Our team will contact you shortly.<br><span class="submission-id">${id}</span>`;
+    messageDiv.classList.add('show','success');
+  }
+  function showError(msg){
+    messageDiv.innerHTML = `<strong>✕ ${msg}</strong>`;
+    messageDiv.classList.add('show','error');
+  }
+</script>
+
+
+
+</body></html>
